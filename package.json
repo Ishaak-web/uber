@@ -1,0 +1,23 @@
+{
+  "name": "uber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ishaak-web/uber.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ishaak-web/uber/issues"
+  },
+  "homepage": "https://github.com/Ishaak-web/uber#readme",
+  "dependencies": {
+    "modern-css-reset": "^1.4.0",
+    "normalize.css": "^8.0.1"
+  }
+}
