@@ -87,6 +87,10 @@ header {
     width: 1920px;
     min-height: 800px;
     background: url('./img/uber_bg-1.png') center center/cover no-repeat;
+    transform: translateY(-119px);
+    z-index: -5;
+    position: relative;
+    padding-top: 155px;
 }
 
 h1.promo-header {
@@ -269,7 +273,7 @@ h2.promo-header {
 .mobile-card {
     width: 320px;
     height: 280px;
-    background:url('./Карточка\ 1.png');
+    background:url('./cards/Карточка\ 1.png');
     margin-bottom: 19px;
 }
 
@@ -299,33 +303,33 @@ h2.promo-header {
 .mobile-card-2 {
     width: 320px;
     height: 280px;
-    background: url('./Карточка\ 2.png');
+    background: url('./cards/Карточка\ 2.png');
     margin-bottom: 19px;
 }
 
 .mobile-card-3 {
     width: 320px;
     height: 280px;
-    background: url(./Карточка\ 3.png);
+    background: url(./cards/Карточка\ 3.png);
     margin-bottom: 19px;
 }
 
 .mobile-card-4 {
     width: 320px;
     height: 280px;
-    background: url(./Карточка\ 4.png);
+    background: url(./cards/Карточка\ 4.png);
 }
 
 .mobile-card-5 {
     width: 320px;
     height: 280px;
-    background: url(./Карточка\ 5.png);
+    background: url(./cards/Карточка\ 5.png);
 }
 
 .mobile-card-6 {
     width: 320px;
     height: 280px;
-    background: url(./Карточка\ 6.png);
+    background: url(./cards/Карточка\ 6.png);
 }
 
 .mobile-card-wraper {
@@ -357,7 +361,7 @@ position: relative;
 .choise-bottom {
     width: 1920px;
     height: 397px;
-    background: url('./Подложка.png');
+    background: url('./img/Подложка.png');
 }
 
 .choise-text {
@@ -369,7 +373,7 @@ position: relative;
 .auto {
     position: absolute;
     right: 2454px;
-    top: 3056px;
+    top: 3212px;
 }
 
 .choise-top .possibilities {
@@ -430,7 +434,7 @@ position: relative;
 .final {
     width: 1440px;
     height: 716px;
-    background: url(./world_bg.png)center center/cover no-repeat;
+    background: url(./img/world_bg.png)center center/cover no-repeat;
     margin-left: 242px;
     padding: 21px 0 48px 0;
 }
@@ -552,3 +556,15 @@ footer {
     justify-content: space-around;
 }
 
+.list {
+    list-style-type: none;
+}
+
+li::before {
+    content: url(./icons/rectange_red.png);
+    width: 21px;
+    height: 20px;
+    /* background: url(./icons/Rectangle.png) center center/cosver no-repeat;/ */
+    display: inline-block;
+    transform: translateX(-38px);
+}
