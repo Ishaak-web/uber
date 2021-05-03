@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/Ishaak-web/uber#readme",
   "dependencies": {
-    "modern-css-reset": "^1.4.0",
+    "modern-css-reset": "^1.4.0"
+  },
+  "devDependencies": {
     "normalize.css": "^8.0.1"
   }
 }
