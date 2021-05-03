@@ -1,4 +1,8 @@
-
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 .container {
     width: 1140px;
@@ -6,7 +10,7 @@
 }
 
 header {
-    width: 1920.03px;
+    width: 100vw;
     height: 50.73px;
     background: #212121;
 }
@@ -32,12 +36,17 @@ header {
 }
 
 .subheader {
-    width: 1919.03px;
+    width: 100vw;
     height: 84px;
-    background: #000000;
-    mix-blend-mode: normal;
-    opacity: 0.6;
-    padding: 17px 0 19px 0;
+}
+
+.background-opacity {
+    position: absolute;
+    width: 100vw;
+    height: 100px;
+    background-color: #000000;
+    opacity: .5;
+    z-index: -1;
 }
 
 .logo-phone {
@@ -60,6 +69,7 @@ header {
 
 .wraper-raper {
     display: flex;
+    padding-top: 20px;
 }
 
 .subheader-btn {
@@ -84,7 +94,7 @@ header {
 }
 
 .promo {
-    width: 1920px;
+    width: 100vw;
     min-height: 800px;
     background: url('./img/uber_bg-1.png') center center/cover no-repeat;
     transform: translateY(-119px);
@@ -151,7 +161,7 @@ h2.promo-header {
 
 .reasons {
     min-height: 850px;
-    width: 1920px;
+    width: 100vw;
     padding: 18px 0 64px 0;
 }
 
@@ -176,6 +186,7 @@ h2.promo-header {
 .reason-card-wraper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .heading {
@@ -255,7 +266,7 @@ h2.promo-header {
 }
 
 .mobile {
-    width: 1920px;
+    width: 100vw;
     padding: 46px 0 80px 0;
 }
 
@@ -291,6 +302,9 @@ h2.promo-header {
 }
 
 .mobile-card-round {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 29px;
     height: 29px;
     background: #000000;
@@ -343,10 +357,11 @@ h2.promo-header {
 }
 
 .choise-top {
-    width: 1920px;
+    width: 100vw;
     height: 499px;
     background: #070716;
     padding-top: 55px;
+    position: relative;
 }
 
 .choise-top .heading {
@@ -359,7 +374,7 @@ position: relative;
 }
  
 .choise-bottom {
-    width: 1920px;
+    width: 100vw;
     height: 397px;
     background: url('./img/Подложка.png');
 }
@@ -372,8 +387,10 @@ position: relative;
 
 .auto {
     position: absolute;
-    right: 2454px;
-    top: 3212px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -200px;
 }
 
 .choise-top .possibilities {
@@ -382,7 +399,7 @@ position: relative;
 }
 
 .conditionals-requests {
-    width: 1920px;
+    width: 100vw;
     min-height: 917px;
 }
 
@@ -405,8 +422,6 @@ position: relative;
     font-weight: 300;
     font-size: 17px;
     line-height: 24px;
-    align-items: center;
-    text-indent: 50px;
     color: #222222;
 }
 
@@ -421,6 +436,8 @@ position: relative;
 
 .conditions-wraper {
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 61px;
 }
 
 .conditionals-requests .heading {
@@ -428,14 +445,15 @@ position: relative;
 }
 
 .conditions {
-    margin-bottom: 61px;
+    width: 40%;
 }
 
 .final {
-    width: 1440px;
+    width: 100vw;
+
     height: 716px;
     background: url(./img/world_bg.png)center center/cover no-repeat;
-    margin-left: 242px;
+
     padding: 21px 0 48px 0;
 }
 
@@ -476,7 +494,7 @@ position: relative;
 }
 
 footer {
-    width: 1920px;
+    width: 100vw;
     height: 155px;
     padding: 11px 0 11px 0;
 }
@@ -500,14 +518,9 @@ footer {
 }
 
 
-.icon-wraper {
-    display: flex;
-    justify-content: space-between;
-}
-
 .text-big {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     font-family: Roboto;
     font-style: normal;
@@ -520,7 +533,7 @@ footer {
 
 .text-middle {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     font-family: Roboto;
     font-style: normal;
@@ -536,14 +549,10 @@ footer {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 11px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
     color: #1FBAD6;
-    display: flex;
-    justify-content: center;
+    font-size: 11px;
+    text-align: center;
+
 }
 
 .text-wraper {
@@ -553,18 +562,37 @@ footer {
 
 .footer-wraper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+.icon:not(:last-child) {
+    padding-right: 14px;
+}
+
+.icon-flex-wrapper {
+    width: 33%;  
+    display: flex;
+}
+
+.text-flex-wrapper {
+    width: 33%;  
+}
+
+.final-icon {
+    width: 33%;
+    text-align: right;
 }
 
 .list {
     list-style-type: none;
+    padding: 0;
 }
 
 li::before {
-    content: url(./icons/rectange_red.png);
+    content: "";
+    position: absolute;
     width: 21px;
     height: 20px;
-    /* background: url(./icons/Rectangle.png) center center/cosver no-repeat;/ */
-    display: inline-block;
+    background: url(./icons/rectange_red.png) center center/cover no-repeat;
     transform: translateX(-38px);
 }
